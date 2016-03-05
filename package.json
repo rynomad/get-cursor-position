@@ -1,0 +1,27 @@
+{
+  "name": "get-cursor-position",
+  "version": "0.0.1",
+  "description": "get the terminal cursor's absolute position",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bubkoo/get-cursor-position.git"
+  },
+  "keywords": [
+    "terminal",
+    "console",
+    "cursor",
+    "position",
+    "ansi",
+    "escape"
+  ],
+  "author": "bubkoo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bubkoo/get-cursor-position/issues"
+  },
+  "homepage": "https://github.com/bubkoo/get-cursor-position"
+}
