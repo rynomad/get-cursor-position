@@ -1,6 +1,6 @@
 # get-cursor-position
 
- > Get the terminal cursor's absolute position.
+ > Get cursor's absolute position in the terminal.
  
  [![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/bubkoo/get-cursor-position/blob/master/LICENSE)
  
