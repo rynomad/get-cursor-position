@@ -1,7 +1,7 @@
 {
   "name": "get-cursor-position",
   "version": "0.0.1",
-  "description": "get the terminal cursor's absolute position",
+  "description": "Get cursor's absolute position in the terminal.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
