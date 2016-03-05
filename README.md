@@ -34,5 +34,5 @@ getCursorPosition(function(pos) {
 
 ## License
 
-MIT © bubkoo
+[MIT](https://github.com/bubkoo/get-cursor-position/blob/master/LICENSE) © bubkoo
 
