@@ -16,7 +16,7 @@ First make sure you have installed the latest version of [node.js](http://nodejs
 Install with npm:
 
 ```
-$ npm install restful-mock-server --save
+$ npm install get-cursor-position --save
 ```
 
 ## Usage
