@@ -31,6 +31,7 @@ getCursorPosition.async(function(row, col) {
 Sync:
 
 ```js
+var getCursorPosition = require('get-cursor-position');
 var pos = getCursorPosition.sync();
 console.log('row: ' + pos.row);
 console.log('col: ' + pos.col);
