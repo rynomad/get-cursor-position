@@ -1,7 +1,7 @@
 {
   "name": "get-cursor-position",
-  "version": "0.0.1",
-  "description": "Get cursor's current position in your terminal.",
+  "version": "0.0.2",
+  "description": "Get the cursor's current position in your terminal.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/bubkoo/get-cursor-position/issues"
   },
-  "homepage": "https://github.com/bubkoo/get-cursor-position"
+  "homepage": "https://github.com/bubkoo/get-cursor-position",
+  "dependencies": {
+    "deasync": "^0.1.4"
+  }
 }
