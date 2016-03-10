@@ -238,7 +238,7 @@ void Method(const v8::FunctionCallbackInfo<Value>& args) {
 
 void Init(Handle<Object> exports) {
   Isolate* isolate = Isolate::GetCurrent();
-  exports->Set(String::NewFromUtf8(isolate, "hello"),
+  exports->Set(String::NewFromUtf8(isolate, "sync"),
       FunctionTemplate::New(isolate, Method)->GetFunction());
 }
 
