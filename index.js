@@ -1,38 +1,6 @@
+var pos  = require('./build/release/pos');
 var tty  = require('tty');
-var pos  = require('./bin/pos');
 var code = '\x1b[6n';
-
-module.exports = {
-
-  sync: pos.sync,
-
-  async: function (callback, context) {
-
-    // start listening
-    process.stdin.resume();
-    raw(true);
-
-    process.stdin.once('data', function (b) {
-      var match = /\[(\d+)\;(\d+)R$/.exec(b.toString());
-      if (match) {
-        var position = match.slice(1, 3).reverse().map(Number);
-
-        callback && callback.call(context, {
-          row: position[1],
-          col: position[0]
-        });
-      }
-
-      // cleanup and close stdin
-      raw(false);
-      process.stdin.pause();
-    });
-
-
-    process.stdout.write(code);
-    process.stdout.emit('data', code);
-  }
-};
 
 function raw(mode) {
   if (process.stdin.setRawMode) {
@@ -41,3 +9,33 @@ function raw(mode) {
     tty.setRawMode(mode)
   }
 }
+
+pos.async = function (callback, context) {
+
+  // start listening
+  process.stdin.resume();
+  raw(true);
+
+  process.stdin.once('data', function (b) {
+    var match = /\[(\d+)\;(\d+)R$/.exec(b.toString());
+    if (match) {
+      var position = match.slice(1, 3).reverse().map(Number);
+
+      callback && callback.call(context, {
+        row: position[1],
+        col: position[0]
+      });
+    }
+
+    // cleanup and close stdin
+    raw(false);
+    process.stdin.pause();
+  });
+
+
+  process.stdout.write(code);
+  process.stdout.emit('data', code);
+};
+
+module.exports = pos;
+
