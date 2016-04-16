@@ -1,6 +1,6 @@
 {
   "name": "get-cursor-position",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Get the cursor's current position in your terminal.",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,10 @@
     "ansi",
     "escape"
   ],
-  "author": "bubkoo",
+  "author": {
+    "name": "bubkoo",
+    "email": "bubkoo.wy@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bubkoo/get-cursor-position/issues"
