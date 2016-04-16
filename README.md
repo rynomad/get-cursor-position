@@ -3,9 +3,8 @@
 > Get the cursor's current position in your terminal.
  
 [![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/bubkoo/get-cursor-position/blob/master/LICENSE)
- 
-[![NPM](https://nodei.co/npm/get-cursor-position.png)](https://nodei.co/npm/get-cursor-position/)
- 
+[![npm:](https://img.shields.io/npm/v/get-cursor-position.svg?style=flat-square)](https://www.npmjs.com/packages/get-cursor-position)
+
 
 ## Install
 
@@ -38,7 +37,8 @@ console.log('col: ' + pos.col);
 ```
 
 
-## License
+## Contributing
 
-[MIT](https://github.com/bubkoo/get-cursor-position/blob/master/LICENSE) © bubkoo
+Pull requests and stars are highly welcome.
 
+For bugs and feature requests, please [create an issue](https://github.com/bubkoo/get-cursor-position/issues/new).
