@@ -6,10 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bubkoo/get-cursor-position.git"
-  },
   "keywords": [
     "terminal",
     "console",
@@ -23,9 +19,12 @@
     "email": "bubkoo.wy@gmail.com"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bubkoo/get-cursor-position.git"
+  },
   "bugs": {
     "url": "https://github.com/bubkoo/get-cursor-position/issues"
   },
-  "homepage": "https://github.com/bubkoo/get-cursor-position",
-  "dependencies": {}
+  "homepage": "https://github.com/bubkoo/get-cursor-position"
 }
