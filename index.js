@@ -1,4 +1,4 @@
-var pos  = require('./build/release/pos');
+var pos  = require('./build/Release/pos');
 var tty  = require('tty');
 var code = '\x1b[6n';
 
